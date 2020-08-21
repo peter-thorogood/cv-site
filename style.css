@@ -1,0 +1,752 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width: 850px) {
+    body{
+        width: 100vw;
+        margin: auto;
+    }
+}
+
+.blue-text{
+    color: #06c;
+}
+
+
+/** ------------NAVBAR */
+nav{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    position: fixed;
+}
+
+nav img{
+    margin-top: 5px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li a{
+    padding: 5px 5vw 5px 0;
+    text-decoration: none;
+    color: white;
+    font-weight: 50;
+    font-size: .8em;
+    opacity: .6;
+}
+
+nav ul li a:hover{
+    opacity: 1;
+}
+
+
+@media only screen and (min-width: 850px) {
+    .nav-small ul{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .nav-big ul{
+        display: none;
+    }
+}
+
+
+/** ------------HIDDEN NAV */
+#burger{
+    outline: 0;
+}
+
+.nav-small ul{
+    display: none;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+    font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 850px) {
+    .nav-small ul{
+        display: flex;
+    }
+}
+
+
+
+.menu{
+    display: none;
+    height: 100vh;
+    background-color: black;
+    padding-top: 60px;
+    padding: 60px 30px 0 10px;
+}
+
+.menu ul li{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+.search {
+    position: relative;
+    color: white;
+    font-size: 14px;
+}
+
+.search input {
+    width: 100%;
+    height: 32px;
+    margin: 20px auto 20px auto;
+    border-radius: 5px;
+    background-color: rgba(105, 105, 105, 0.281);
+    color: white;
+    font-size: 16px;
+    font-weight: 100;
+    border: none;
+
+}
+
+.search input { text-indent: 32px;}
+.search .fa-search { 
+    position: absolute;
+    top: 28px;
+    left: 10px;
+}
+
+
+.menu{
+    display: none;
+}
+
+
+/** ------------ALERT */
+.alert{
+    background-color: rgb(245, 245, 247);
+    display: flex;
+    padding-top: 65px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 50;
+    font-size: .75em;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+}
+
+/** ------------HERO */
+.hero{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.hero h1{
+    padding-top: 60px;
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero h3{
+    margin-bottom: 20px;
+    font-weight: 100;
+    font-size: 1.4em;
+}
+
+.hero h5{
+    margin-bottom: 20px;
+    font-weight: 50;
+    color: rgb(138, 137, 137);
+    font-size: 1em;
+}
+
+.hero a{
+    text-decoration: none;
+    color: rgb(41, 151, 255);
+    font-weight: 100;
+    padding: 20px;
+}
+
+.hero a:hover{
+    text-decoration: underline;
+}
+
+.Iphone-SE{
+    height: 650px;
+    color: white;
+    margin: auto;
+    justify-items: center;
+    background-color: #131313;
+    background-image: url(assets/[www.apple.com][806]hero__dvsxv8smkkgi_large_2x.jpg) ;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 1200px;
+}
+
+@media only screen and (max-width: 850px) {
+    .Iphone-SE{
+        background-image: url(assets/[www.apple.com][332]hero__dvsxv8smkkgi_small_2x.jpg) ;
+    background-position: 50% 95%;
+    background-repeat: no-repeat;
+    background-size: 400px;
+    }
+}
+
+.Iphone-11{
+    width: 100%;
+    height: 650px;
+    margin: auto;
+    justify-items: center;
+    background-color: 	#fafafa;
+    background-image: url(assets/[www.apple.com][68]hero__dvsxv8smkkgi_largetall_2x.jpg) ;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 2200px;
+}
+
+.iPad-Pro{
+    width: 100%;
+    height: 650px;
+    margin: auto;
+    justify-items: center;
+    background-color: 	#fafafa;
+    background-image: url(assets/[www.apple.com][117]hero__dvsxv8smkkgi_large.jpg) ;
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+    background-size: 2800px;
+}
+
+@media only screen and (max-width: 850px) {
+    .iPad-Pro{
+        background-image: url(assets/[www.apple.com][525]tile__cauwwcyyn9hy_small_2x.jpg) ;
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+    background-size: 800px;
+    }
+}
+
+/** ------------MID BLOCKS */
+
+.mid-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0px 10px 0px;
+    text-align: center;
+}
+
+.mid-block{
+    width: 49%;
+    height: 600px;
+    margin: 4px;
+}
+
+@media only screen and (min-width: 2000px){
+    
+    .mid-blocks{
+        width: 70%;
+        margin: auto;
+    }
+    
+    .mid-block{
+        width: 29%;
+        height: 600px;
+        margin: 30px;
+    }
+    
+}
+
+.made-in-the-uk{
+    background-color: 	black;
+    background-image: url(assets/[www.apple.com][86]tile__cauwwcyyn9hy_large_2x.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 1200px;
+    background-position: 50% 100%;
+}
+
+.made-in-the-uk h1{
+    color: white;
+    margin: 40px;
+    font-size: 2.6em;
+    font-weight: 400;
+}
+
+.made-in-the-uk a{
+    color: white;
+    text-decoration: none;
+    font-weight: 20;
+}
+
+.iMac{
+    background-color: #f2f2f2;
+    background-image: url(assets/[www.apple.com][55]tile__cauwwcyyn9hy_large.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-position: 50% 100%;
+}
+
+.iMac h1{
+    color: black;
+    margin: 40px 0 20px 0;
+    font-size: 2.6em;
+    font-weight: 400;
+}
+
+.iMac h3{
+    color: black;
+    margin: 20px;
+    font-size: 1.6em;
+    font-weight: 100;
+}
+
+.iMac a{
+    color: #06c;
+    text-decoration: none;
+    font-weight: 20;
+}
+
+@media only screen and (max-width: 850px) {
+    .iMac{
+        background-color: #f2f2f2;
+        background-image: url(assets/[www.apple.com][55]tile__cauwwcyyn9hy_large.jpg) ;
+        background-repeat: no-repeat;
+        background-size: 350px;
+        background-position: 50% 80%;
+    }
+}
+
+.apple-at-work{
+    background-color: #f2f2f2;
+    background-image: url(assets/[www.apple.com][578]tile__cauwwcyyn9hy_large_2x.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    background-position: 45%;
+}
+
+.apple-at-work h1{
+    color: white;
+    margin: 20px;
+    font-size: 2.6em;
+    font-weight: 400;
+}
+
+.apple-at-work h3{
+    color: white;
+    margin: 30px 0 10px 0;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+.apple-at-work a{
+    color: rgb(66, 137, 207);
+    text-decoration: none;
+    font-weight: 20;
+}
+
+.apples-approach{
+    background-color: #fafafa;
+    background-image: url(assets/[www.apple.com][868]tile__cauwwcyyn9hy_large_2x.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 100%;
+}
+
+@media only screen and (max-width: 396px){
+    .apples-approach{
+        background-size: cover;
+        background-position: 50%;
+        background-position-y: 50px;
+    }
+}
+
+.apples-approach h1{
+    color: black;
+    margin: 50px 5px 20px 5px;
+    font-size: 2.6em;
+    font-weight: 400;
+}
+
+.apples-approach h3{
+    color: black;
+    margin: 20px;
+    font-size: 1.6em;
+    font-weight: 100;
+}
+
+.apples-approach a{
+    color: #06c;
+    text-decoration: none;
+    font-weight: 20;
+}
+
+.apple-tv{
+    background-color: #f2f2f2;
+    background-image: url(assets/[www.apple.com][253]tile__cauwwcyyn9hy_large.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 1300px;
+    background-position: 50% 100%;
+}
+
+.appletv-logo{
+    margin-top: 60px;
+}
+
+.oprah-logo{
+    margin-top: 350px;
+    margin-bottom: 10px;
+}
+
+.apple-tv a{
+    color: #06c;
+    text-decoration: none;
+    font-weight: 20;
+}
+
+
+
+.buy-a-mac{
+    background-color: rgb(240, 240, 242);
+    background-image: url(assets/[www.apple.com][334]tile__cauwwcyyn9hy_large_2x.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: 50% 100%;
+}
+
+@media only screen and (max-width: 850px) {
+    .buy-a-mac{
+        box-sizing: border-box;
+        background-color: rgb(240, 240, 242);
+        background-image: url(assets/[www.apple.com][58]tile__cauwwcyyn9hy_small_2x.jpg);
+        
+    }
+}
+
+.buy-a-mac h1{
+    color: black;
+    margin: 40px auto 20px auto;
+    font-size: 2.6em;
+    max-width: 23ch;
+    font-weight: 400;
+    padding: 0px 20px 0 20px;
+}
+
+.buy-a-mac a{
+    color: #06c;
+    text-decoration: none;
+    font-weight: 20;
+}
+
+@media only screen and (max-width: 1250px) {
+    .buy-a-mac{
+        background-size: 500px;
+    background-position: 50% 90%;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .buy-a-mac{
+        background-size: 800px;
+    background-position: 50% 90%;
+    padding: 0px 20px 0 20px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .mid-block{
+        width: 940px;
+    }
+}
+
+
+/** ------------BOTTOM */
+.bottom{
+    width: 100%;
+    background-color: rgb(245, 245, 247);
+}
+
+/** ------------FOOTNOTES */
+.footnotes{
+    display: flex;
+    width: 65%;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 0.8em;
+    font-weight: 50;
+    line-height: 19px;
+    color: #6d6d70be;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .footnotes{
+        width: 90%;
+    }
+    
+}
+
+
+/** ------------BOTTOM NAVLINKS */
+
+.divider{
+    border: none;
+    border-bottom: 1px solid #6d6d70be;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .divider{
+        width: 90%;
+    }
+}
+
+.navlinks{
+    display: flex;
+    width: 65%;
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 0.8em;
+    font-weight: 100;
+    color: #6d6d70be;
+    justify-content: space-between;
+}
+
+.navlinks ul h1{
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.navlinks ul{
+    list-style: none;
+}
+
+.navlinks li{
+    padding-bottom: 15px;
+}
+
+.navlinks a{
+    text-decoration: none;
+    color:#6d6d70be;
+    
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .navlinks{
+        width: 90%;
+    }
+
+}
+
+/** ------------HIDDEN BOTTOM NAVLINKS ------------*/
+.collapsible {
+    display: block;
+    cursor: pointer;
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #5c5c5f;
+    outline: none;
+    border: none;
+    background-color: rgb(245, 245, 247);
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    display: none;
+    overflow: hidden;
+    width: 90%;
+    margin: auto;
+    line-height: 30px;
+  }
+
+
+@media only screen and (max-width: 1250px) {
+
+    .navlinks{
+        display: none;
+    }
+}
+
+
+
+
+.navlinks-small{
+    display: none;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    .navlinks-small{
+        display: block;
+    }
+}
+
+.navlinks-small li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.navlinks-small li:hover{
+    background: #ececf0;
+}
+
+.navlinks-small a{
+    color: #86868b;
+    font-weight: 300;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.navlinks-small hr{
+    margin: auto;
+    border: none;
+    border-bottom: 1px solid rgb(155, 155, 155);
+    width: 90%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/** ------------FOOTER ------------*/
+
+footer{
+    width: 65%;
+    margin: auto;
+    font-size: 0.8em;
+    font-weight: 100;
+    color:#86868b;
+}
+
+.above-footer{
+    margin-bottom: 5px;
+    line-height: 20px;
+}
+
+footer hr{
+    border: none;
+    border-bottom: 1px solid #86868b;
+}
+
+.bottom-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-center {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    order: 2;
+}
+
+.footer-center p{
+    border: none;
+    height: 50%;
+    border-right: solid #86868b thin;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+    align-items: center;
+}
+
+.footer-center p:last-child{
+    border: none;
+}
+
+.footer-right{
+    display: flex;
+    height: 32px;
+    padding-right: 0px;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    order: 1;
+}
+
+.footer-left{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    order: 3;
+}
+
+@media only screen and (max-width: 1250px) {
+
+    footer{
+        width: 90%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
