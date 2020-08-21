@@ -8,6 +8,13 @@ body{
     font-family: sans-serif;
 }
 
+@media only screen and (max-width: 850px) {
+    body{
+        width: 100vw;
+        margin: auto;
+    }
+}
+
 .blue-text{
     color: #06c;
 }
@@ -437,11 +444,10 @@ nav ul li a:hover{
 
 @media only screen and (max-width: 850px) {
     .buy-a-mac{
+        box-sizing: border-box;
         background-color: rgb(240, 240, 242);
-        background-image: url(assets/[www.apple.com][237]tile__cauwwcyyn9hy_small.jpg) ;
-        background-repeat: no-repeat;
-        background-size: 400px;
-        background-position: 50% 70%;
+        background-image: url(assets/[www.apple.com][58]tile__cauwwcyyn9hy_small_2x.jpg);
+        
     }
 }
 
@@ -469,7 +475,7 @@ nav ul li a:hover{
 
 @media only screen and (max-width: 850px) {
     .buy-a-mac{
-        background-size: 1000px;
+        background-size: 800px;
     background-position: 50% 90%;
     padding: 0px 20px 0 20px;
     }
@@ -497,7 +503,7 @@ nav ul li a:hover{
     font-size: 0.8em;
     font-weight: 50;
     line-height: 19px;
-    color: #86868bbe;
+    color: #6d6d70be;
     margin-bottom: 20px;
 }
 
@@ -514,7 +520,7 @@ nav ul li a:hover{
 
 .divider{
     border: none;
-    border-bottom: 1px solid #86868b;
+    border-bottom: 1px solid #6d6d70be;
     width: 65%;
     margin: auto;
     margin-bottom: 20px;
@@ -534,7 +540,7 @@ nav ul li a:hover{
     margin-bottom: 15px;
     font-size: 0.8em;
     font-weight: 100;
-    color: #86868b;
+    color: #6d6d70be;
     justify-content: space-between;
 }
 
@@ -554,7 +560,7 @@ nav ul li a:hover{
 
 .navlinks a{
     text-decoration: none;
-    color:#86868b;
+    color:#6d6d70be;
     
 }
 
@@ -728,19 +734,3 @@ footer hr{
     }
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
