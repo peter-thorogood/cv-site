@@ -8,13 +8,6 @@ body{
     font-family: sans-serif;
 }
 
-@media only screen and (max-width: 850px) {
-    body{
-        width: 10vw;
-        margin: auto;
-    }
-}
-
 .blue-text{
     color: #06c;
 }
