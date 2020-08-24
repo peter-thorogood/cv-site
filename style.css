@@ -515,9 +515,8 @@ nav ul li a:hover{
     margin: auto;
     padding-top: 10px;
     font-size: 0.8em;
-    font-weight: 50;
     line-height: 19px;
-    font-weight: 150;
+    font-weight: 400;
     color:#6e6e72;
     margin-bottom: 20px;
 }
@@ -554,7 +553,7 @@ nav ul li a:hover{
     margin: auto;
     margin-bottom: 15px;
     font-size: 0.8em;
-    font-weight: 150;
+    font-weight: 300;
     color:#6e6e72;
     justify-content: space-between;
 }
@@ -575,7 +574,7 @@ nav ul li a:hover{
 
 .navlinks a{
     text-decoration: none;
-    color:#6d6d70be;
+    color:#6d6d70;
     
 }
 
@@ -605,7 +604,7 @@ nav ul li a:hover{
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .collapsible:hover {
-    background-color: #ccc;
+    background-color: rgb(221, 221, 221);
   }
   
   /* Style the collapsible content. Note: hidden by default */
@@ -665,9 +664,20 @@ nav ul li a:hover{
     
 }
 
+/* plus to x */
 
+.right{
+    float: right;
+  }
 
-
+  .navlinks-small span{
+      padding-right: 20px;
+  }
+  
+  .spin span{
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
+  }
 
 
 
@@ -682,8 +692,8 @@ footer{
     width: 65%;
     margin: auto;
     font-size: 0.8em;
-    font-weight: 150;
-    color:#6e6e72;
+    font-weight: 400;
+    color:#525255;
 }
 
 .above-footer{
