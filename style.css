@@ -675,8 +675,9 @@ nav ul li a:hover{
   }
   
   .spin span{
-    transform-origin: 50% 50%;
     transform: rotate(45deg);
+    padding-right: 21px;
+    font-size: 120%;
   }
 
 
