@@ -672,12 +672,14 @@ nav ul li a:hover{
 
   .navlinks-small span{
       padding-right: 20px;
+      transition: 0.5s;
   }
   
   .spin span{
     transform: rotate(45deg);
     padding-right: 21px;
     font-size: 120%;
+    transition: 0.5s;
   }
 
 
